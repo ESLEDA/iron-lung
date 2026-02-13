@@ -1,0 +1,56 @@
+/* Elimina márgenes y relleno por defecto */
+body {
+    margin: 0;
+}
+
+
+
+/* ====================================================
+   Estilos para el contenido del nav
+   ==================================================== */
+  
+
+nav {
+    display: flex;            
+    justify-content: space-between; 
+    align-items: center;     
+    background-color: #0f0101;  
+    padding: 0px 20px;       
+    
+}
+
+/* Estilo para el contenedor que incluye el logo y el nombre */
+#icon-title {
+    display: flex;            
+    align-items: center;      
+}
+#icon-title img {
+    
+    width: 120px;              
+    height: 80px;             
+    
+}
+
+/* Estilo para el menú de navegación */
+#menu {
+    display: flex;            
+    gap: 20px;                
+    font-family: Arial, sans-serif;
+}
+#menu a {
+    color: rgb(179, 16, 16);             
+    text-decoration: none;    
+    padding: 10px 15px;       
+    transition: color 3s;
+    border-radius: 5px;      
+}
+#menu a:hover {
+    color: red; /* sombra*/
+    text-shadow: 
+        0 0 10px red,     
+        0 0 20px red,    
+        0 0 30px red,    
+        0 0 40px red,    
+        0 0 60px red,    
+        0 0 80px red;    
+}
