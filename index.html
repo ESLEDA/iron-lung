@@ -1,250 +1,345 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>freeCode</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iron Lung</title>
+  <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
-    <nav>
-        <div id="icon-title">
-            <figure>
-                <img src="img/sinfondo_icon.png" alt="icono iron lung">
-            </figure>
-            
-        </div>
-        
-        
-        <section id="menu">
-            <a href="#inicio">Inicio</a>
-            <a href="#servicios">Historia</a>
-            <a href="#proyectos">Lore</a>
-            <a href="#blog">Pélicula</a>
-            <a href="#Videojuego">Videojuego</a>
-            <a href="#contacto">Contacto</a>
-        </section>   
-    </nav>
+  <nav class="site-nav" aria-label="Navegación principal">
+    <div class="nav-inner">
+      <a id="icon-title" href="#inicio" aria-label="Ir al inicio">
+        <img src="img/sinfondo_icon.png" alt="Icono Iron Lung" />
+      </a>
 
+      <div id="menu" class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#historia">Historia</a>
+        <a href="#mitologia">Lore</a>
+        <a href="#pelicula">Película</a>
+        <a href="#videojuego">Videojuego</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
     <section id="inicio">
-        <h1>EL PULMÓN DE HIERRO</h1>
-        <p>Un viaje al abismo</p>
-        <p>Donde la oscuridad respira</p>
-        
-        <button type="button">
-          ↓
-        </button>
+      <figure>
+        <img src="img/submarino03.png" alt="Submarino en un océano oscuro" />
+      </figure>
 
-        <figure>
-            <img src="#submarino.jpg" alt="Submarino en un océano oscuro" />
-            
-        </figure>
+      <div class="hero-content">
+        <h1>EL PULMÓN DE HIERRO</h1>
+
+        <p class="subtitulo">
+          <span>Un viaje al abismo</span>
+          <span>Donde la oscuridad respira</span>
+        </p>
+
+        <a class="btn-flecha" href="#historia" aria-label="Bajar a Historia">↓</a>
+      </div>
     </section>
 
     <section id="historia">
-        <figure>
-            <img src="#tormenta.jpg" alt="Tormenta de sangre" />
-        </figure>
-        <article id="historia" aria-labelledby="historia-title">
-            <p>// HISTORIA</p>
-            <h2>El Último Viaje</h2>
-            
-            <p>
-              En un futuro donde la humanidad ha colonizado el sistema solar, todos los planetas
-              habitables han desaparecido misteriosamente. Solo quedan lunas áridas y océanos de sangre.
-            </p>
+      <figure>
+        <img src="img/tormenta2.png" alt="Tormenta de sangre" />
+      </figure>
 
-            <p>
-              Eres un prisionero condenado, enviado en un submarino improvisado llamado "Iron Lung"
-              (Pulmón de Hierro) a explorar un océano carmesí en una luna desconocida. Tu misión:
-              fotografiar puntos de interés en las profundidades.
-            </p>
+      <article id="historia-content" aria-labelledby="historia-title">
+        <p>// HISTORIA</p>
+        <h2 id="historia-title">El Último Viaje</h2>
 
-            <p>
-              Sin ventanas para ver el exterior, solo cuentas con un sonar primitivo, coordenadas
-              aproximadas y una cámara que debes activar manualmente. Cada fotografía podría ser la
-              última evidencia de tu existencia.
-            </p>
+        <p>
+          En un futuro donde la humanidad ha colonizado el sistema solar, todos los planetas
+          habitables han desaparecido misteriosamente. Solo quedan lunas áridas y océanos de sangre.
+        </p>
 
-            <p>
-              El océano de sangre oculta secretos antiguos y horrores inimaginables. La presión
-              aumenta, el oxígeno disminuye, y algo en las profundidades sabe que estás ahí.
-            </p>
-        </article>
-        <p><span>__________</span>COORDENADAS:  -73.2847,   41.9283</p>
+        <p>
+          Eres un prisionero condenado, enviado en un submarino improvisado llamado "Iron Lung"
+          (Pulmón de Hierro) a explorar un océano carmesí en una luna desconocida. Tu misión:
+          fotografiar puntos de interés en las profundidades.
+        </p>
+
+        <p>
+          Sin ventanas para ver el exterior, solo cuentas con un sonar primitivo, coordenadas
+          aproximadas y una cámara que debes activar manualmente. Cada fotografía podría ser la
+          última evidencia de tu existencia.
+        </p>
+
+        <p>
+          El océano de sangre oculta secretos antiguos y horrores inimaginables. La presión
+          aumenta, el oxígeno disminuye, y algo en las profundidades sabe que estás ahí.
+        </p>
+      </article>
+
+      <p><span>__________</span>COORDENADAS: -73.2847, 41.9283</p>
     </section>
 
-    <section id="pelicula">
-        <figure>
-            <div>
-                <img src="#pelicula.jpg" alt="El pulmon de hierro cartel">
-            </div>
-            <div>
-                <p>Director: Mark Fischbach</p>
-                <p>Año: 2024</p>
-                <p>Duración: 98 minutos</p>
-                <p>Género: Terror / Ciencia Ficción</p>
-            </div>
+    <section id="pelicula" aria-labelledby="pelicula-title">
+      <div class="movie__grid">
+        <figure class="movie__poster">
+          <div class="movie__posterFrame">
+            <img src="img/movi.png" alt="Póster de la película Iron Lung" />
+          </div>
+
+          <figcaption class="movie__meta">
+            <p><span>Director:</span> Mark Fischbach</p>
+            <p><span>Año:</span> 2024</p>
+            <p><span>Duración:</span> 98 minutos</p>
+            <p><span>Género:</span> Terror / Ciencia Ficción</p>
+          </figcaption>
         </figure>
-        <article>
-            <p>// ADAPTACIÓN CINEMATOGRÁFICA</p>
-            <h2>Terror Claustofóbico</h2>
-            <div>
-                <p>
-                    La adaptación cinematográfica de Iron Lung lleva el terror psicológico del videojuego a la pantalla grande.
-                    Dirigida por Mark Fischbach (Markiplier), la película expande el universo del juego con una narrativa más profunda.
-                </p>
 
-                <p>
-                    Un convicto es enviado a las profundidades de un océano alienígena de sangre en un submarino destartalado.
-                    Sin ventanas, sin esperanza, solo la oscuridad y el sonido del metal crujiendo bajo la presión.
-                </p>
+        <article class="movie__content">
+          <p class="movie__kicker">// ADAPTACIÓN CINEMATOGRÁFICA</p>
 
-                <p>
-                    La película explora temas de aislamiento, desesperación y el horror de lo desconocido.
-                    Cada minuto aumenta la tensión mientras el protagonista descubre que no está solo en las profundidades.
-                </p>
-            </div>
-            <button>
-                <a class="movie-cta" href="#trailer" role="button" aria-label="Ver tráiler">
-                ▶ VER TRÁILER
-                </a>
-            </button>
+          <h2 id="pelicula-title" class="movie__title">
+            Terror<br />Claustrofóbico
+          </h2>
+
+          <div class="movie__card">
+            <p>
+              La adaptación cinematográfica de Iron Lung lleva el terror psicológico del videojuego a la
+              pantalla grande. Dirigida por Mark Fischbach (Markiplier), la película expande el universo
+              del juego con una narrativa más profunda.
+            </p>
+
+            <p>
+              Un convicto es enviado a las profundidades de un océano alienígena de sangre en un
+              submarino destartalado. Sin ventanas, sin esperanza, solo la oscuridad y el sonido del metal
+              crujiendo bajo la presión.
+            </p>
+
+            <p>
+              La película explora temas de aislamiento, desesperación y el horror de lo desconocido.
+              Cada minuto aumenta la tensión mientras el protagonista descubre que no está solo en las profundidades.
+            </p>
+          </div>
+
+          <a class="movie__cta" href="#trailer" aria-label="Ver tráiler">▶ VER TRÁILER</a>
         </article>
+      </div>
     </section>
 
-    <section>
-        <ul class="features-list" aria-label="Características principales">
-            <li class="feature-card">
-              <span class="feature-icon" aria-hidden="true"></span>
-              <h3>JUGABILIDAD</h3>
-              <p>Exploración tensa y atmosférica</p>
-            </li>
+    <section id="mitologia">
+      <h2>MITOLOGÍA DEL ABISMO</h2>
 
-            <li class="feature-card">
-              <span class="feature-icon" aria-hidden="true"></span>
-              <h3>DURACIÓN</h3>
-              <p>1–2 horas de terror puro</p>
-            </li>
-            
-            <li class="feature-card">
-              <span class="feature-icon" aria-hidden="true"></span>
-              <h3>DIFICULTAD</h3>
-              <p>Supervivencia extrema</p>
-            </li>
+      <div class="lista">
+        <article class="item">
+          <span class="barra"></span>
+          <span class="icono" aria-hidden="true">☠</span>
+          <div class="texto">
+            <h3>LA QUIETUD</h3>
+            <p>
+              Un evento cataclísmico conocido como “La Quietud” borró todos los planetas habitables del universo
+              en un instante. Billones de vidas desaparecieron sin explicación. Los supervivientes en estaciones
+              espaciales y lunas quedaron varados, enfrentando una extinción lenta e inevitable.
+            </p>
+          </div>
+        </article>
 
-            <li class="feature-card">
-              <span class="feature-icon" aria-hidden="true"></span>
-              <h3>NAVEGACIÓN</h3>
-              <p>Solo coordenadas y sonar</p>
-            </li>
-        </ul>
+        <article class="item">
+          <span class="barra"></span>
+          <span class="icono" aria-hidden="true">🩸</span>
+          <div class="texto">
+            <h3>LOS OCÉANOS DE SANGRE</h3>
+            <p>
+              Tras La Quietud, aparecieron misteriosamente océanos de líquido carmesí en lunas previamente áridas.
+              Su composición es desconocida, pero se asemeja a sangre humana. Algunos creen que son restos líquidos
+              de civilizaciones perdidas, otros piensan que son portales a dimensiones olvidadas.
+            </p>
+          </div>
+        </article>
 
-        <div>
-            <dl class="game-meta" aria-label="Ficha técnica">
-              <div class="meta-row">
-                <dt>Plataformas:</dt>
-                <dd>PC, Steam</dd>
-              </div>
-          
-              <div class="meta-row">
-                <dt>Desarrollador:</dt>
-                <dd>David Szymanski</dd>
-              </div>
-          
-              <div class="meta-row">
-                <dt>Lanzamiento:</dt>
-                <dd>Marzo 2022</dd>
-              </div>
-          
-              <div class="meta-row">
-                <dt>Género:</dt>
-                <dd>Horror, Simulación</dd>
-              </div>
-            </dl>
-        </div>
+        <article class="item">
+          <span class="barra"></span>
+          <span class="icono" aria-hidden="true">◯</span>
+          <div class="texto">
+            <h3>EL PULMÓN DE HIERRO</h3>
+            <p>
+              Un submarino improvisado construido con chatarra y desesperación. Sin ventanas, sin lujos, solo metal
+              oxidado y sistemas básicos. Es una tumba flotante diseñada para misiones suicidas. Los prisioneros son
+              enviados a explorar lo inexplicable, sabiendo que nunca regresarán.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-        <figure>
-            <img src="game-preview.jpg" alt="Cabina del submarino con pantallas e instrumentos" />
+    <section id="videojuego" aria-label="Sección del videojuego">
+      <ul class="features-list" aria-label="Características principales">
+        <li class="feature-card">
+          <span class="feature-icon icon-pad" aria-hidden="true"></span>
+          <h3>JUGABILIDAD</h3>
+          <p>Exploración tensa y atmosférica</p>
+        </li>
+
+        <li class="feature-card">
+          <span class="feature-icon icon-clock" aria-hidden="true"></span>
+          <h3>DURACIÓN</h3>
+          <p>1–2 horas de terror puro</p>
+        </li>
+
+        <li class="feature-card">
+          <span class="feature-icon icon-skull" aria-hidden="true"></span>
+          <h3>DIFICULTAD</h3>
+          <p>Supervivencia extrema</p>
+        </li>
+
+        <li class="feature-card">
+          <span class="feature-icon icon-pin" aria-hidden="true"></span>
+          <h3>NAVEGACIÓN</h3>
+          <p>Solo coordenadas y sonar</p>
+        </li>
+      </ul>
+
+      <div class="game-grid">
+        <dl class="game-meta" aria-label="Ficha técnica">
+          <div class="meta-row">
+            <dt>Plataformas:</dt>
+            <dd>PC, Steam</dd>
+          </div>
+          <div class="meta-row">
+            <dt>Desarrollador:</dt>
+            <dd>David Szymanski</dd>
+          </div>
+          <div class="meta-row">
+            <dt>Lanzamiento:</dt>
+            <dd>Marzo 2022</dd>
+          </div>
+          <div class="meta-row">
+            <dt>Género:</dt>
+            <dd>Horror, Simulación</dd>
+          </div>
+        </dl>
+
+        <figure class="game-preview">
+          <img src="img/interiorSub.png" alt="Cabina del submarino con pantallas e instrumentos" />
         </figure>
 
         <div class="game-details" aria-label="Características del juego">
-            <h3>CARACTERÍSTICAS:</h3>
-            <ul class="details-list">
-                <li>Sin ventanas exteriores</li>
-                <li>Navegación por coordenadas</li>
-                <li>Fotografía de puntos clave</li>
-                <li>Atmósfera opresiva</li>
-                <li>Horror psicológico</li>
-                <li>Final impactante</li>
-            </ul>
+          <h3>CARACTERÍSTICAS:</h3>
+          <ul class="details-list">
+            <li>Sin ventanas exteriores</li>
+            <li>Navegación por coordenadas</li>
+            <li>Fotografía de puntos clave</li>
+            <li>Atmósfera opresiva</li>
+            <li>Horror psicológico</li>
+            <li>Final impactante</li>
+          </ul>
         </div>
+      </div>
 
-        <button>
-            <a class="btn-download" href="#descargar" role="button">DESCARGAR JUEGO</a>
-        </button>
-
+      <a class="btn-download" href="#descargar" role="button">DESCARGAR JUEGO</a>
     </section>
 
     <section id="contacto" aria-labelledby="contacto-title">
-        <header>
-          <h2 id="contacto-title">CONTACTO</h2>
-          <p>¿Tienes preguntas sobre Iron Lung? Envíanos un mensaje</p>
-        </header>
-    
-        <form action="#" method="post">
-          <div class="form-grid">
-            <div class="form-field">
-              <label for="nombre">NOMBRE:</label>
-              <input
-                id="nombre"
-                name="nombre"
-                type="text"
-                placeholder="Tu nombre"
-                autocomplete="name"
-                required
-              />
-            </div>
+        <div class="contacto-wrap">
+          <header class="contacto-head">
+            <h2 id="contacto-title">CONTACTO</h2>
+            <p class="contacto-sub">
+              ¿Listo para colaborar? Envíame un mensaje y te respondo lo antes posible.
+            </p>
+          </header>
+      
+          <div class="contacto-grid">
+            <!-- LADO IZQUIERDO: info -->
+            <aside class="contacto-info" aria-label="Información de contacto">
+              <div class="card-info">
+                <h3>Datos</h3>
+
+                <ul class="info-list">
+                  <li>
+                    <span class="ico" aria-hidden="true">📍</span>
+                    <div>
+                      <strong>Ubicación</strong>
+                      <p>Tuxtla Gutiérrez, Chiapas</p>
+                    </div>
+                  </li>
+              
+                  <li>
+                    <span class="ico" aria-hidden="true">✉️</span>
+                    <div>
+                      <strong>Email</strong>
+                      <p><a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a></p>
+                    </div>
+                  </li>
+              
+                  <li>
+                    <span class="ico" aria-hidden="true">📞</span>
+                    <div>
+                      <strong>Teléfono</strong>
+                      <p><a href="tel:+5210000000000">+52 1 000 000 0000</a></p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+          
+              <div class="card-info">
+                <h3>Redes</h3>
+                <div class="social">
+                  <a href="#" class="social-btn" aria-label="Instagram">Instagram</a>
+                  <a href="#" class="social-btn" aria-label="GitHub">GitHub</a>
+                  <a href="#" class="social-btn" aria-label="LinkedIn">LinkedIn</a>
+                </div>
+              </div>
+          
+              <div class="card-mini">
+                <p class="mini-label">// CANAL RÁPIDO</p>
+                <p class="mini-text">
+                  Si es urgente, mándame un mensaje corto con el asunto y tu contacto.
+                </p>
+              </div>
+            </aside>
         
-            <div class="form-field">
-              <label for="email">EMAIL:</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="tu@email.com"
-                autocomplete="email"
-                required
-              />
-            </div>
+            <!-- Todo LADO DERECHO: formulario -->
+            <article class="contacto-form" aria-label="Formulario de contacto">
+              <div class="form-card">
+                <p class="form-kicker">// ENVÍA UN MENSAJE</p>
+                <h3 class="form-title">Hablemos</h3>
+
+                <form action="#" method="post" class="form">
+                  <div class="row">
+                    <div class="field">
+                      <label for="nombre">Nombre</label>
+                      <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+                    </div>
+                
+                    <div class="field">
+                      <label for="correo">Correo</label>
+                      <input id="correo" name="correo" type="email" placeholder="tucorreo@ejemplo.com" required />
+                    </div>
+                  </div>
+              
+                  <div class="field">
+                    <label for="asunto">Asunto</label>
+                    <input id="asunto" name="asunto" type="text" placeholder="¿De qué trata?" />
+                  </div>
+              
+                  <div class="field">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje..." required></textarea>
+                  </div>
+              
+                  <div class="actions">
+                    <button type="submit" class="btn-enviar">ENVIAR</button>
+                    <p class="hint">Respuesta típica: 24–48 hrs.</p>
+                  </div>
+                </form>
+              </div>
+            </article>
           </div>
       
-          <div class="form-field">
-            <label for="asunto">ASUNTO:</label>
-            <input
-              id="asunto"
-              name="asunto"
-              type="text"
-              placeholder="Asunto del mensaje"
-              required
-            />
-          </div>
-      
-          <div class="form-field">
-            <label for="mensaje">MENSAJE:</label>
-            <textarea
-              id="mensaje"
-              name="mensaje"
-              placeholder="Escribe tu mensaje aquí (máximo 500 caracteres)"
-              maxlength="500"
-              rows="7"
-              required
-            ></textarea>
-            <small>Máximo 500 caracteres</small>
-          </div>
-      
-          <button type="submit">ENVIAR MENSAJE</button>
-        </form>
+          <footer class="contacto-foot">
+            <span class="line" aria-hidden="true"></span>
+            <p class="coords">COORDENADAS: -73.2847, 41.9283</p>
+          </footer>
+        </div>
     </section>
+
+  </main>
 </body>
 </html>
